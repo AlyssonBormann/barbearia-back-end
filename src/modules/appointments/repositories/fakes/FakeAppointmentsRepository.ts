@@ -5,7 +5,7 @@ import IAppointmentsRepositories from '@modules/appointments/repositories/IAppoi
 import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointmentDTO';
 
-class fakeAppointmentsRepository implements IAppointmentsRepositories {
+class FakeAppointmentsRepository implements IAppointmentsRepositories {
     private appointments: Appointment[] = [];
 
     public async create({
@@ -30,4 +30,4 @@ class fakeAppointmentsRepository implements IAppointmentsRepositories {
     }
 }
 
-export default fakeAppointmentsRepository;
+export default FakeAppointmentsRepository;

@@ -1,7 +1,7 @@
 import AuthenticateUserService from '@modules/users/services/AuthenticateUserService';
 import CreateUserService from '@modules/users/services/CreateUserService';
-import FakeUsersRepository from '@modules/users/repositories/fakes/fakeUsersRepository';
-import FakeHashProvider from '@modules/users/providers/HashProvider/fakes/fakeHashProvider';
+import FakeUsersRepository from '@modules/users/repositories/fakes/FakeUsersRepository';
+import FakeHashProvider from '@modules/users/providers/HashProvider/fakes/FakeHashProvider';
 import AppError from '@shared/errors/AppError';
 
 let authenticateUserService: AuthenticateUserService;
