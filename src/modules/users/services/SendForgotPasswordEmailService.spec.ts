@@ -56,7 +56,7 @@ describe('SendForgotPasswordEmailService', () => {
         });
 
         await sendForgotPasswordEmailService.execute({
-            email: 'hon@example.com',
+            email: 'jhon@example.com',
         });
 
         expect(generateToken).lastCalledWith(user.id);
